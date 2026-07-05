@@ -1,0 +1,3 @@
+scenario,deciles_mailed,pieces_mailed,mailed_sales,incremental_sales,mail_cost,incremental_value,net,roi
+No model (mail everyone),10,89806,239,194.9,134709.0,194900.0,60191.0,0.45
+With model (mail deciles 1-6),6,53841,200,163.1,80762.0,163100.0,82338.0,1.02

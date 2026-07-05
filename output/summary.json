@@ -1,0 +1,101 @@
+{
+  "cost_per_piece": 1.5,
+  "value_per_sale": 1000.0,
+  "cutoff_decile": 6,
+  "deciles": {
+    "decile": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "n_mailed": [
+      8936,
+      8999,
+      8987,
+      8976,
+      8979,
+      8964,
+      9030,
+      9004,
+      8965,
+      8966
+    ],
+    "mailed_rate_pct": [
+      0.7498,
+      0.3889,
+      0.3895,
+      0.2451,
+      0.2562,
+      0.2008,
+      0.155,
+      0.1333,
+      0.0781,
+      0.0669
+    ],
+    "incremental_sales": [
+      54.7,
+      28.5,
+      28.5,
+      17.9,
+      18.8,
+      14.7,
+      11.4,
+      9.8,
+      5.7,
+      4.9
+    ],
+    "net": [
+      41296.0,
+      15002.0,
+      15020.0,
+      4436.0,
+      5332.0,
+      1254.0,
+      -2145.0,
+      -3706.0,
+      -7748.0,
+      -8549.0
+    ],
+    "roi": [
+      3.08,
+      1.11,
+      1.11,
+      0.33,
+      0.4,
+      0.09,
+      -0.16,
+      -0.27,
+      -0.58,
+      -0.64
+    ]
+  },
+  "no_model": {
+    "scenario": "No model (mail everyone)",
+    "deciles_mailed": 10,
+    "pieces_mailed": 89806,
+    "mailed_sales": 239,
+    "incremental_sales": 194.9,
+    "mail_cost": 134709.0,
+    "incremental_value": 194900.0,
+    "net": 60191.0,
+    "roi": 0.45
+  },
+  "with_model": {
+    "scenario": "With model (mail deciles 1-6)",
+    "deciles_mailed": 6,
+    "pieces_mailed": 53841,
+    "mailed_sales": 200,
+    "incremental_sales": 163.1,
+    "mail_cost": 80762.0,
+    "incremental_value": 163100.0,
+    "net": 82338.0,
+    "roi": 1.02
+  }
+}
