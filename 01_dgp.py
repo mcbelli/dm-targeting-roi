@@ -2,8 +2,7 @@
 01_dgp.py -- Data Generating Process for the Direct Mail ROI demo.
 
 Simulates a universe of 100,000 households for a high-value direct mail
-program (value per sale $1,000, cost per piece $1.50), modeled after
-DM_ROI_Example.xlsx:
+program (value per sale $1,000, cost per piece $1.50):
 
   - Household features: income, net worth, modeled cruise-ship likelihood,
     prior direct-mail response frequency.
@@ -11,8 +10,7 @@ DM_ROI_Example.xlsx:
   - 90% of households are mailed; 10% are held out (not mailed) at random.
     Holdouts still buy at a low baseline rate, so they let us measure lift.
   - Mail multiplies the odds of a sale ~6x (calibrated so the top decile
-    responds at ~0.7% mailed and the overall mailed rate is ~0.27%,
-    like the spreadsheet).
+    responds at ~0.7% mailed and the overall mailed rate is ~0.27%).
 
 Output: output/households.csv with one row per household.
 """
@@ -25,6 +23,7 @@ N_HH = 100_000
 HOLDOUT_PCT = 0.10
 MAIL_ODDS_MULT = 6.0          # mail multiplies odds of sale ~6x
 TARGET_MAILED_RATE = 0.00266  # overall mailed sales rate (~239 / 90,000)
+
 
 rng = np.random.default_rng(SEED)
 
